@@ -1,0 +1,35 @@
+action class;-
+it is the one of the concrete class from selenium package.
+there are 21 non static methods are there.
+it is used to perform mouse operation eg.click ,drag and drop,right click.
+
+steps of action class
+1. create the objet of action class.
+      Actions a=new Actions()
+2. in action constructor we have too pass argument which has webdriver reference.
+     Actions a=new Actions(driver)
+3. with reference variable call non static method.
+4. call a method a.perform();
+
+Methods;-
+1.click
+2.click(webelement target)
+3.Doubleclick()
+4.Double click(webelement target)
+5.Contextclick()
+6.Contextclick(WT)
+7.click&hold()
+8.click&Hold(WT)
+9.release()
+10.release(WT)
+11.Sendkey(charsequence)
+12.sendkey(charsequence target)
+13.build()
+14.perform()
+15.keyup()
+16.keydown()
+17.movetoElement()
+18.movetoElement()  [mouse overing acton]
+19.MoveByoffset()
+20.drag&drop(src,dest)
+21.drag&dropBy()
