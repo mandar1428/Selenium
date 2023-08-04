@@ -4,3 +4,13 @@ Sangli UA/Metropolitan is one of the biggest city in Maharashtra and 93rd bigges
 
 Transportation
 Sangli Railway station and Miraj Junction are two important railway hubs in Sangli city.Many long route trains are hault here. Sangli city is directly connected to important cities like Mumbai,Pune, Kolhapur,Bangalore, Mangalore,Madgaon,Cochi,Mysuru,Delhi, Ajmer,Jodhpur, Ahmedabad,Gandhidham, Udaipur, Belgavi,Hubali,Shri Ganganagar by direct trains.MSRTC have Divisional office at Sangli and bus depots and terminals at Sangli and Miraj in city limits.Direct buses connect Pune,Mumbai, Solapur, Kolhapur, Pandharpur, Akkalkot, Parbhani,Nanded,Latur,Shegaon,Beed, Chatrapati Sambhaji Nagar,Ahmednagar, Panjim, Ratnagiri,Satara,Nashik, Hyderabad and many more cities in Maharashtra and Karnataka.MSRTC runs Shivshahi A/C seater,Non A/C sleeper coach and ordinary buses from Sangli and Miraj Depots.State Government of Maharashtra give approval to build Airport near Kavalapur for Sangli Metropolitan area.Within metropolitan limits,city bus of MSRTC is the best medium used by peoples,Also auto rickshaws, private cars and two wheelers are used by many peoples.Other than MSRTC,many private travels like Balaji,Shreenath,VRL,NTN,Datta Krupa,konduskar,Ashoka,M.B.Link,Vaibhav, Shreyash,Sanjay,Sai Krupa,Deepakraj,Saini,Sharma play A/C and non A/C sleeper coach and seater buses to Ahmedabad,Surat, Mumbai,Pune, Coimbatore,Salem, Chennai, Hyderabad,Pune, Panjim,Nagpur,Latur, Solapur, Bangalore and other cities.
+FileInputStream f=new FileInputStream("src\\test\\resources\\ddtsheet.xlsx");
+
+Workbook wd = WorkbookFactory.create(f);
+//workbook it is a class used to read data from excel sheet
+Sheet sh = wd.getSheet("ddtsheet");//to get the control of the sheet
+Row rw = sh.getRow(0); //to read the data from row
+Cell cl = rw.getCell(0); // to get control of cell
+String data = cl.getStringCellValue();
+System.out.print(data);
+
